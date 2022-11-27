@@ -1,0 +1,28 @@
+.app {
+	display: flex;
+	justify-content: center;
+	background-image: url(../backgroundimg/greenbackground.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: 700px) {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		width: 1024px;
+
+		@media screen and (max-width: 700px) {
+			width: 100vw;
+		}
+
+		.link {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: "Helvetica";
+}
+
+body {
+	overflow-x: hidden;
+	font-weight: normal;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+}
+@import "./auth.scss";
+@import "./footer.scss";
+@import "./home.scss";
+@import "./nav.scss";
+@import "./single.scss";
+@import "./write.scss";
+@import "./app.scss";

@@ -1,22 +1,15 @@
-import {
-	createBrowserRouter,
-	RouterProvider,
-	Route,
-	Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Write from "./pages/Write";
-import Singlepost from "./pages/Singlepost";
-import Nav from "./comp/Nav";
+import Single from "./pages/Single";
 import Footer from "./comp/Footer";
-import "./style.scss";
+import "./style/main.scss";
 
 const Layout = () => {
 	return (
 		<>
-			<Nav />
 			<Outlet />
 			<Footer />
 		</>
@@ -34,7 +27,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/post/:id",
-				element: <Singlepost />,
+				element: <Single />,
 			},
 			{
 				path: "/write",

@@ -1,0 +1,147 @@
+.addwrite {
+	margin: 20px;
+	display: flex;
+	gap: 20px;
+	height: 100vh;
+
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+	}
+
+	.content {
+		flex: 5;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-top: 150px;
+
+		@media screen and (max-width: 700px) {
+			margin-top: 10px;
+			align-items: center;
+			margin-top: 15px;
+		}
+
+		.backbutton {
+			.backarrow {
+				font-size: 35px;
+				padding-right: 15px;
+				color: #354f52;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		input {
+			padding: 10px;
+			border: 2px solid black;
+			border-radius: 5px;
+			font-size: 20px;
+		}
+
+		.editorContainer {
+			height: 300px;
+			border: 2px solid black;
+			overflow: scroll;
+			border-radius: 5px;
+			background-color: white;
+
+			@media screen and (max-width: 700px) {
+				height: 400px;
+			}
+
+			.editor {
+				height: 100%;
+				border: none;
+			}
+		}
+	}
+
+	.menu {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-top: 150px;
+		height: 415px;
+
+		@media screen and (max-width: 700px) {
+			height: 200px;
+			margin-top: 20px;
+			display: block;
+		}
+
+		.item {
+			border: 3px solid black;
+			padding: 10px;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-size: 15px;
+			color: black;
+			border-radius: 5px;
+
+			h1 {
+				display: flex;
+				font-size: 25px;
+				color: black;
+
+				@media screen and (max-width: 700px) {
+					font-size: 19px;
+					margin: 5px;
+				}
+			}
+
+			.filelabel {
+				cursor: pointer;
+				border: 3px solid black;
+				padding: 5px;
+				border-radius: 5px;
+				justify-content: center;
+				display: flex;
+				color: black;
+				background-color: #cad2c5;
+				font-weight: bold;
+				font-size: 19px;
+
+				@media screen and (max-width: 700px) {
+					font-size: 15px;
+					margin: 5px;
+				}
+
+				&:hover {
+					font-weight: bold;
+					background-color: #52796f;
+				}
+			}
+
+			.buttons {
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+
+				@media screen and (max-width: 700px) {
+					margin: 5px;
+				}
+
+				.update {
+					// publish post button
+					background-color: #cad2c5;
+					font-size: 15px;
+					color: #22181c;
+					border: 1px solid #22181c;
+					border-radius: 5px;
+					padding: 3px;
+
+					&:hover {
+						cursor: pointer;
+						font-weight: bold;
+						border: 2px solid black;
+					}
+				}
+			}
+		}
+	}
+}

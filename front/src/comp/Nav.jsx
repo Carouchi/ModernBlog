@@ -11,7 +11,7 @@ const Nav = () => {
 			<div className="container">
 				<div className="space"></div>
 				<div className="links">
-					<Link className="link" to="/blog">
+					<Link className="link" to="/">
 						<h4>Blog</h4>
 					</Link>
 					<span className="write">

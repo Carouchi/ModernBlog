@@ -1,0 +1,38 @@
+//nav
+
+.navbar {
+	.container {
+		padding: 10px 0px;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: 700px) {
+			justify-content: center;
+		}
+
+		.links {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			color: black;
+			h6 {
+				font-size: 16px;
+				font-weight: 300;
+			}
+
+			span {
+				cursor: pointer;
+			}
+
+			.write {
+				color: black;
+				font-weight: 300;
+				text-decoration: none;
+
+				&:hover {
+					color: #312f2f;
+				}
+			}
+		}
+	}
+}
